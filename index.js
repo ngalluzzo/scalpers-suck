@@ -37,5 +37,8 @@ async function isGpuForSale(product) {
 
 async function sendPushBulletNotification(product) {
 
-  pusher.link(`ujyjz1ykpI4sjAuXDo0g56`, product, `https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080/`, `${product} is for sale!`)
+  const noteUrl = `https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080/`
+  const note = `${product} is for sale!`
+  
+  pusher.link(device_id, product, noteUrl, note)
 }
