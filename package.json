@@ -1,0 +1,23 @@
+{
+  "name": "scalpers-suck",
+  "version": "1.0.0",
+  "description": "If you can't beat em, join em!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngalluzzo/scalpers-suck.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngalluzzo/scalpers-suck/issues"
+  },
+  "homepage": "https://github.com/ngalluzzo/scalpers-suck#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "pushbullet": "^2.4.0"
+  }
+}
