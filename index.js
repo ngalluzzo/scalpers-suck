@@ -16,3 +16,17 @@ async function searchNvidiaProduct(product) {
   }
   
 }
+
+async function isGpuForSale(product) {
+
+  const GpuSearch = await searchNvidiaProduct(product)
+
+  const GpuDetails = GpuSearch.searchedProducts.productDetails[0]
+
+  if (GpuDetails.prdStatus !== `gf_notify_me`) {
+
+    return false
+  }
+
+  return true
+}
