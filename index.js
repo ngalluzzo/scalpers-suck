@@ -9,7 +9,7 @@ async function searchNvidiaProduct(product) {
   try {
     const response = await axios.get(`https://api.nvidia.partners/edge/product/search?page=1&limit=9&locale=en-us&search=${encodeURIComponent(product)}`)
 
-    if (response.status = 200) {
+    if (response.status == 200) {
 
       return response.data
     }
@@ -57,6 +57,8 @@ async function inStockNotification(product) {
 
   sendPushBulletNotification(device_id,product)
 }
+
+inStockNotification(`RTX 3080`)
 
 setInterval(function() {
 
